@@ -46,7 +46,7 @@ const App = () => {
     <div className="App">
       <h1>Task Tracker</h1>
       <AddTaskForm addTask={addTask} />
-      <div>
+      <div className='filter'>
         <button onClick={() => filterTasks('all')}>All</button>
         <button onClick={() => filterTasks('completed')}>Completed</button>
         <button onClick={() => filterTasks('incomplete')}>Incomplete</button>

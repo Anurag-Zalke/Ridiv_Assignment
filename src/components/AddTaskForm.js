@@ -24,26 +24,33 @@ const AddTaskForm = ({ addTask, user }) => {
     <div className="form-container">
       <h2>Add New Task</h2>
       <form>
-        <div>
-          <label>Task Name:</label>
-          <input
-            type="text"
-            placeholder="Enter task name..."
-            value={taskName}
-            onChange={(e) => setTaskName(e.target.value)}
-          />
+        <div class="form-container">
+          <div class="form-group">
+            <label for="taskName">Task Name:</label>
+            <input
+              type="text"
+              id="taskName"
+              placeholder="Enter task name..."
+              value={taskName}
+              onChange={(e) => setTaskName(e.target.value)}
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="taskDescription">Task Description:</label>
+            <textarea
+              id="taskDescription"
+              placeholder="Enter task description..."
+              value={taskDescription}
+              onChange={(e) => setTaskDescription(e.target.value)}
+            ></textarea>
+          </div>
+
+          <button class="add-task-button" type="button" onClick={handleAddTask}>
+            Add Task
+          </button>
         </div>
-        <div>
-          <label>Task Description:</label>
-          <textarea
-            placeholder="Enter task description..."
-            value={taskDescription}
-            onChange={(e) => setTaskDescription(e.target.value)}
-          ></textarea>
-        </div>
-        <button type="button" onClick={handleAddTask}>
-          Add Task
-        </button>
+
       </form>
     </div>
   );
