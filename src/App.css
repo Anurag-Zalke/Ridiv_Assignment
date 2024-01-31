@@ -141,7 +141,7 @@ button.add-task-button:hover {
 }
 
 .filter button {
-  width: 100px; /* Set a fixed width */
+  width: 100px; 
   background-color: #4caf50;
   border: none;
   color: #fff;
