@@ -35,8 +35,8 @@ ul {
 }
 
 li {
-  background-color: rgba(227, 177, 177, 0.8);
-  border: 2px solid #ff6767;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #c9c5ff;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -48,9 +48,9 @@ li {
 }
 
 .completed {
-  border-color: #8194ff;
+  border-color: hsl(115, 100%, 55%);
   border-width: 2px;
-  background-color: #c6cfff;
+  background-color: #aaffb0;
 }
 
 button {
